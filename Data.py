@@ -8,25 +8,25 @@ Hey {}
 
 Welcome to {}
 
-You can use me to rename documents and files with certain other features. Use `/help` to learn how !
+You can use me to rename documents and files with certain other features. Use help Command to know how to use me.
 
-By @StarkBots
+Made With 💕 By @Tellybots_4u
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")],
+        [InlineKeyboardButton(text="🏡 Return Home", callback_data="home")],
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("🤖 Update Channel✨", url="https://t.me/tellybots_4u")],
         [
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("👲 About", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
-        [InlineKeyboardButton("🎨 Support Group 🎨", url="https://t.me/StarkBotsChat")],
+        [InlineKeyboardButton("🚦 Bot Status ", url="https://t.me/tellybots_4u")],
+        [InlineKeyboardButton("💬 Support Group", url="https://t.me/tellybots_support")],
     ]
 
     # Help Message
@@ -36,7 +36,7 @@ Just send a document / video to start renaming. Then when asked, give the new na
 1) To have a custom thumbnail on your file, add an 'jpg' image as thumbnail using /thumbnail command.
 2) By default, videos are uploaded as videos. To prompt the bot to upload video as document, use /settings to change settings.
 
-✨ **Available Commands** ✨
+ **Available Commands** 
 
 /thumbnail - Change thumbnail settings
 /settings - Change default settings
@@ -49,13 +49,13 @@ Just send a document / video to start renaming. Then when asked, give the new na
     ABOUT = """
 **About This Bot** 
 
-A telegram rename bot by @StarkBots
+🔻A telegram rename bot by @Tellybots_4u🔻
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/RenameTelegramBot)
+💠 Source Code : [Click Here](https://t.me/tellybots_digital)
 
-Framework : [Pyrogram](docs.pyrogram.org)
+🪐 Framework : [Pyrogram](docs.pyrogram.org)
 
-Language : [Python](www.python.org)
+📚 Language : [Python](www.python.org)
 
-Developer : @StarkProgrammer
+👲 Developer : @Tellybots_4u
     """
