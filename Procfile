@@ -1,1 +1,1 @@
-worker: python3m.py
+worker: python3 rename.py
