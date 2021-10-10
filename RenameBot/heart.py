@@ -87,7 +87,7 @@ async def _rename(bot: Client, msg: Message):
         await uploading.delete()
     except Exception as e:
         await msg.reply(
-            f"Error : {e} \n\nTry Again and if still doesn't work then forward this message to @StarkBots !")
+            f"Error : {e} \n\nTry Again and if still doesn't work then forward this message to @tellybots_support !")
     finally:
         q = SESSION.query(Users).get(msg.from_user.id)
         q.running = False
