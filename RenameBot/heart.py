@@ -65,23 +65,23 @@ async def _rename(bot: Client, msg: Message):
         else:
             thumb = None
         # Downloading
-        downloading = await msg.reply("**Downloading...**")
-        file_path = await msg.download(progress=progress, progress_args=(downloading, "Downloading..."))
+        downloading = await msg.reply("**🔻Downloading Content to my server🔻...**")
+        file_path = await msg.download(progress=progress, progress_args=(downloading, "🔻Downloading Content to my server🔻..."))
         await downloading.edit("**Downloaded.**")
         await downloading.delete()
 
         # Uploading
-        uploading = await downloading.reply("**Now Uploading...**")
+        uploading = await downloading.reply("**🔻Now Uploading🔻...**")
         if msg.caption is None:
             caption = ""
         else:
             caption = msg.caption
         if q.video_to == "video":
             await bot.send_video(chat_id=msg.chat.id, video=file_path, file_name=new_name, caption=caption,
-                                 thumb=thumb, progress=progress, progress_args=(uploading, "Uploading..."))
+                                 thumb=thumb, progress=progress, progress_args=(uploading, "🔻Uploading🔻..."))
         else:
             await bot.send_document(chat_id=msg.chat.id, document=file_path, file_name=new_name, caption=caption,
-                                    thumb=thumb, progress=progress, progress_args=(uploading, "Uploading..."))
+                                    thumb=thumb, progress=progress, progress_args=(uploading, "🔻Uploading🔻..."))
         SESSION.close()
         await uploading.edit("**Uploaded.**")
         await uploading.delete()
